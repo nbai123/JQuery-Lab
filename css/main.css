@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    background-color: #9DC284;
+    color: #FFFFFF;
+}
+
+.list {
+    color: #F4B25F;
+}
+
+.remove {
+    background-color: #D16D6A;
+    color: #FFFFFF;
+}
+
+.addSkill {
+    border: 3px solid #9DC284;
+    padding: 12px, 24px;
+    margin: 10px;
+}
+
+.skills {
+    border: 3px solid #9DC284;
+}
