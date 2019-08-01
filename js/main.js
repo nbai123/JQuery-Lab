@@ -1,3 +1,16 @@
-//When page is open no input values show on screen
-//after inputting an item in empty field click button and show item on table above
-//when item gets added to table include button with the add that can remove the input after it is on the table
+$('#addSkill').on('click', function(evt) {
+    var newSkill = $('.skills').val();
+    var newRow = `
+        <tr>
+        <td><button class="remove">X</button></td>
+        <td>${newSkill}</td>
+        </tr>
+    `;
+    $(newRow).appendTo($('table'));
+})
+
+$('.list').on('click', 'button', function(){
+    $(this).closest('tr').fadeOut(750, function(){
+        $(this).remove()
+    })
+});
